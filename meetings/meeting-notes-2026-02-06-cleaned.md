@@ -97,6 +97,11 @@ The three booking systems were discussed during the meeting but detail was lost 
 
 **Cost:** ~£600/month total for all three systems. Aidan said he would welcome something cheaper that combines all three into one.
 
+**Customer-facing problems (observed by Tony on website):**
+- Each activity links to a completely different booking interface. Bowling, karting, and escape room all look different. Inconsistent and confusing for customers.
+- **No multi-activity booking.** Customers cannot book bowling + karting (or any combination) in a single transaction. They have to go through separate booking flows for each activity, which contradicts Rogue's core USP of "everything under one roof."
+- **Upselling is reactive, not proactive.** Aidan cross-sells in person once customers are already on-site ("you've finished karting, we've got a bowling lane free, I'll give you a lower price"). This works but misses everyone who would have booked multiple activities online if given the option, and the on-the-spot discount is likely more generous than what a booking-time package deal would require.
+
 **Integration potential (researched post-meeting):**
 - **Resova** has a full REST API with webhooks (best integration potential of the three)
 - **QubicaAMF** has a developer portal at developer.qubicaamf.com (requires authorisation from QubicaAMF rep)

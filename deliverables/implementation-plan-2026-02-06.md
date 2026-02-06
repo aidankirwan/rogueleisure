@@ -308,7 +308,14 @@ Once Jane builds the corporate page:
 
 **Manual Excel bookkeeping:** Every evening, staff manually enter all money received and booking details from the three systems into Excel columns. This duplicates data that already exists in the booking systems, is time-consuming and error-prone, and would be largely eliminated by either (a) automated exports from the current systems to Google Sheets, or (b) a unified platform with built-in reporting.
 
-**Medium-term: Unified platform evaluation.** ROLLER (£310-825/month) or Clubspeed remain worth evaluating. At £600/month for three separate systems with no CRM, no loyalty, no unified reporting, and no dynamic pricing, ROLLER's mid-range pricing could actually be a cost saving while adding significant capability. Notably, Clubspeed acquired Resova in 2022, so there may be a natural consolidation path.
+**Customer-facing booking problems:** The three separate systems create a fragmented online experience. Each activity links to a completely different booking interface (different look, different flow). Customers cannot book multiple activities in a single transaction, which directly undermines Rogue's USP of "everything under one roof." Currently, cross-selling happens in person when Aidan offers spare capacity at a discounted rate after customers arrive, but this is reactive (misses online bookers entirely) and likely gives away more margin than a structured multi-activity package would.
+
+**Medium-term: Unified platform evaluation.** ROLLER (£310-825/month) or Clubspeed remain worth evaluating. The case is strong:
+- **Cost:** £600/month for three separate systems vs £310-825/month for one unified platform. Could be a net saving.
+- **Revenue:** Multi-activity packages bookable online (e.g. "Bowling + Karting: save 10%") would capture upsell revenue currently lost because customers can't combine activities at the point of booking.
+- **Customer experience:** One consistent booking interface across all activities, with automated cross-sell suggestions.
+- **Operations:** Built-in reporting eliminates the manual Excel bookkeeping. CRM, loyalty, dynamic pricing, and digital waivers included.
+- **Clubspeed acquired Resova in 2022**, so there may be a natural consolidation path.
 
 ---
 
