@@ -95,10 +95,18 @@ The three booking systems were discussed during the meeting but detail was lost 
 | Escape Room | **Resova** | Resova Ltd (acquired by Clubspeed LLC in 2022) | https://login.resova.com |
 | Go-Karting | **Book My Karting** | Smart Entertainment Limited, Lichfield | https://admin.bookmykarting.co.uk/bmk/login.aspx |
 
+**Cost:** ~£600/month total for all three systems. Aidan said he would welcome something cheaper that combines all three into one.
+
 **Integration potential (researched post-meeting):**
 - **Resova** has a full REST API with webhooks (best integration potential of the three)
 - **QubicaAMF** has a developer portal at developer.qubicaamf.com (requires authorisation from QubicaAMF rep)
 - **Book My Karting** has no public API (CSV/PDF export only)
+
+---
+
+## Financial Record-Keeping
+
+All accounting is done manually in **Excel**. Every evening, staff take all money received and details from online bookings and enter the data into Excel columns by hand. This duplicates data that already exists inside the three booking systems and is time-consuming, error-prone, and archaic. A unified booking platform with built-in reporting (or even automated exports from the current systems to Google Sheets) would eliminate most of this manual work.
 
 ---
 

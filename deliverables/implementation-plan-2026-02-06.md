@@ -304,7 +304,11 @@ Once Jane builds the corporate page:
 3. **Book My Karting:** Weekly CSV export to Google Sheet (manual for now; ask Smart Entertainment about API access later)
 4. **Simple Google Sheet dashboard** pulling from these three sheets to show total bookings across all activities
 
-**Medium-term:** ROLLER (£310-825/month) or Clubspeed remain worth evaluating for full unification once the operational foundations are solid. Notably, Clubspeed acquired Resova in 2022, so there may be a natural consolidation path.
+**Current cost:** Aidan estimates ~£600/month total for the three systems. This is significant context for the ROLLER evaluation below.
+
+**Manual Excel bookkeeping:** Every evening, staff manually enter all money received and booking details from the three systems into Excel columns. This duplicates data that already exists in the booking systems, is time-consuming and error-prone, and would be largely eliminated by either (a) automated exports from the current systems to Google Sheets, or (b) a unified platform with built-in reporting.
+
+**Medium-term: Unified platform evaluation.** ROLLER (£310-825/month) or Clubspeed remain worth evaluating. At £600/month for three separate systems with no CRM, no loyalty, no unified reporting, and no dynamic pricing, ROLLER's mid-range pricing could actually be a cost saving while adding significant capability. Notably, Clubspeed acquired Resova in 2022, so there may be a natural consolidation path.
 
 ---
 
