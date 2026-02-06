@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Large image files (keep in iCloud/Google Drive instead)
+*.jpeg
+*.jpg
+*.png
+*.heic
+*.HEIC
+
+# Converted images from sips
+*-converted.png
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Office temp files
+~$*
+
+# Claude session files
+*.jsonl
