@@ -283,12 +283,28 @@ Once Jane builds the corporate page:
 - Follow-up template in Claude
 
 #### 4E. Booking System Investigation
-The three systems (Cubicle for bowling, bespoke karting, Resolver for escape room) still need deeper investigation:
-- Do any have APIs?
-- Can data be exported to a unified dashboard?
-- Is ROLLER or Clubspeed worth evaluating longer-term?
 
-This is a Phase 4+ conversation -- not urgent while the operational foundations are being built.
+**Confirmed systems** (names confirmed by Aidan via WhatsApp, 6 Feb 2026):
+
+| Activity | System | Vendor |
+|----------|--------|--------|
+| Bowling | **QubicaAMF Conqueror X** | QubicaAMF Worldwide (Richmond VA / Bologna). Also manufactures Rogue's pinsetters and lanes. 10,000+ centres in 90 countries. |
+| Escape Room | **Resova** | Resova Ltd (UK, est. 2015). Acquired by Clubspeed LLC in 2022. 2,000+ customers, 1,500+ escape rooms. |
+| Go-Karting | **Book My Karting** | Smart Entertainment Limited (Lichfield, est. 1998). £73M+ bookings processed. ASP.NET stack. |
+
+**API and integration research:**
+
+- **Resova** -- Full REST API at developers.resova.com. Webhooks supported (transaction.created, booking.updated, etc.). Integrates with MailChimp, Google Calendar (two-way sync), Stripe, PayPal, Groupon. CSV/XML export (6-month date range limit). **Best integration potential of the three.**
+- **QubicaAMF Conqueror X** -- Developer portal at developer.qubicaamf.com (requires authorisation from QubicaAMF rep). Software suite includes Conqueror XRM (CRM/loyalty) which may already be included but not activated. Integrates with QuickBooks, Square. QPortal cloud dashboards for reporting.
+- **Book My Karting** -- No public API. Integrates with MailChimp, PayPal, WorldPay, Sage Pay. CSV/PDF export for reports. Would need direct contact with Smart Entertainment for any custom integration work.
+
+**Practical short-term approach (before considering ROLLER or full unification):**
+1. **Resova:** Set up webhooks to push escape room bookings to a Google Sheet automatically
+2. **QubicaAMF:** Ask Rogue's QubicaAMF rep about API access and whether QPortal reports can be scheduled/emailed. Check if Conqueror XRM loyalty features are already included in their licence.
+3. **Book My Karting:** Weekly CSV export to Google Sheet (manual for now; ask Smart Entertainment about API access later)
+4. **Simple Google Sheet dashboard** pulling from these three sheets to show total bookings across all activities
+
+**Medium-term:** ROLLER (£310-825/month) or Clubspeed remain worth evaluating for full unification once the operational foundations are solid. Notably, Clubspeed acquired Resova in 2022, so there may be a natural consolidation path.
 
 ---
 

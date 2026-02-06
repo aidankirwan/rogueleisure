@@ -150,7 +150,7 @@ And a simple enquiry form. Name, company, number of people, preferred date, what
 
 This might be the most overlooked opportunity of all.
 
-Every customer who books through any of Rogue's three booking systems (Cubicle for bowling, the bespoke karting system, Resolver for the escape room) has given their email address. That's a goldmine of contacts. People who have already visited, already had a good time, and are the most likely people to come back.
+Every customer who books through any of Rogue's three booking systems (QubicaAMF Conqueror X for bowling, Book My Karting for go-karting, Resova for the escape room) has given their email address. That's a goldmine of contacts. People who have already visited, already had a good time, and are the most likely people to come back.
 
 The question is: is anyone doing anything with those email addresses?
 

@@ -30,7 +30,7 @@ What does this mean for Rogue? The market is growing, but customers are pickier.
 
 Let's be honest about where things are right now. This isn't a criticism. Loads of independent venues are in exactly the same position. But it's important to see it clearly so the priorities make sense.
 
-Rogue runs three separate booking systems. Cubicle handles bowling. A bespoke system handles karting. Resolver handles the escape room. None of these systems talk to each other. Staff have to check three different dashboards to understand what's happening across the venue on any given day.
+Rogue runs three separate booking systems. QubicaAMF Conqueror X handles bowling. Book My Karting handles go-karting. Resova handles the escape room. None of these systems talk to each other. Staff have to check three different dashboards to understand what's happening across the venue on any given day.
 
 Compliance is all on paper. Temperature checks, kart maintenance logs, opening and closing routines, fire safety records. Paper checklists everywhere. Paper gets lost. Scanning backlogs pile up. And if someone misses a check, nobody knows until there's a problem or an inspector asks a question you can't answer quickly.
 
@@ -84,17 +84,28 @@ Nobody's saying Rogue needs to switch tomorrow. But when the existing kart fleet
 
 ## Unified Booking Platforms: The Dream vs Reality
 
-One of the biggest operational headaches at Rogue is having three separate booking systems that don't communicate. The dream is a single platform that handles everything. Let's look at what's available and what's realistic.
+One of the biggest operational headaches at Rogue is having three separate booking systems that don't communicate. The dream is a single platform that handles everything. Now that we know what the three systems actually are, let's look at what's possible.
 
-**ROLLER** is probably the most relevant option. It's trusted by over 2,000 attractions worldwide and has a London office. It handles ticketing, point of sale, CRM, digital waivers, gift cards, memberships, and cashless wallets. It supports bowling, karting, and multiple activity types under one roof. Dynamic pricing is built in. In November 2025, they launched an AI assistant called ROLLER iQ that helps operators with data insights and recommendations. Pricing sits somewhere in the range of 310 to 825 pounds per month, depending on what you need. That's a significant investment, but remember what it replaces: three separate systems, no CRM, no loyalty programme, no unified data. If ROLLER does what it claims, it pays for itself in operational efficiency and marketing capability.
+The three systems are **QubicaAMF Conqueror X** for bowling, **Resova** for the escape room, and **Book My Karting** for go-karting. Each is from a different vendor, built on different technology, with very different integration capabilities.
 
-**Clubspeed** is worth knowing about because it was designed specifically for family entertainment centres that combine karting and bowling. It has a documented API for custom integrations, which matters if you want to connect it to other tools. It integrates with MyLaps timing for karting, and it offers 24/7 phone support.
+**Resova** is the good news story. It has a full REST API with webhooks. That means it can automatically push data to other tools when something happens, like a new booking or a cancellation. It already integrates with MailChimp and Google Calendar (two-way sync). Setting up a webhook to push escape room bookings into a Google Sheet is straightforward and could be done quickly. Resova was acquired by Clubspeed in 2022, which is interesting because Clubspeed makes family entertainment centre software for karting and bowling. That acquisition might open up a consolidation path in the future.
 
-Now for the reality check. Rogue's three current systems (Cubicle, the bespoke karting system, and Resolver) may or may not have APIs. Some might be completely locked down with no way to export data or connect to other tools. Before committing to any platform like ROLLER or Clubspeed, someone needs to investigate what data can actually be extracted from the current systems and how difficult a migration would be. This is a research task, not a purchasing decision.
+**QubicaAMF Conqueror X** is a big, established platform used by over 10,000 bowling centres in 90 countries. QubicaAMF is also the company that makes Rogue's physical pinsetters and lanes, so there's already a relationship there. They have a developer portal for API access, but it requires authorisation from your QubicaAMF representative. It's not publicly documented the way Resova's API is. The software suite includes something called Conqueror XRM, which is a CRM and loyalty module with points, tiers, purchase history, and targeted promotions. This might already be included in Rogue's licence but not switched on. That's worth checking because it could give Rogue a loyalty programme for bowling without buying anything new.
 
-The immediate win isn't replacing all three systems overnight. It's much simpler than that. It's getting the data from all three systems into one place, even if that means someone manually exports a spreadsheet from each system once a week and combines them. A single view of total bookings across all activities, even a rough one, is massively more useful than three separate dashboards that nobody has time to cross-reference.
+**Book My Karting** is the trickiest one for integration. It's made by Smart Entertainment, a small UK company based in Lichfield that's been going since 1998. They've processed over 73 million pounds in bookings, so they're established and reliable. But there's no public API. If you want to connect it to anything else, you'd need to contact Smart Entertainment directly and ask what's possible. In the meantime, they do offer CSV and PDF export for reports, so a weekly manual export to a Google Sheet is the practical short-term option.
 
-A unified platform like ROLLER is a medium-term goal. Worth investigating properly. Worth budgeting for. But not something to rush into.
+**ROLLER** is probably the most relevant unified platform if Rogue ever decides to consolidate. It's trusted by over 2,000 attractions worldwide and has a London office. It handles ticketing, point of sale, CRM, digital waivers, gift cards, memberships, and cashless wallets. It supports bowling, karting, and multiple activity types under one roof. Dynamic pricing is built in. In November 2025, they launched an AI assistant called ROLLER iQ that helps operators with data insights and recommendations. Pricing sits somewhere in the range of 310 to 825 pounds per month, depending on what you need. That's a significant investment, but remember what it replaces: three separate systems, no CRM, no loyalty programme, no unified data.
+
+**Clubspeed** is worth knowing about because it was designed specifically for family entertainment centres that combine karting and bowling. It has a documented API for custom integrations, integrates with MyLaps timing for karting, and offers 24/7 phone support. And since Clubspeed now owns Resova, there might be a natural path where Rogue's escape room system and a new unified platform come from the same company.
+
+The practical approach right now isn't replacing all three systems. It's getting data from all three into one place:
+
+1. Set up Resova webhooks to automatically push escape room bookings to a Google Sheet
+2. Ask Rogue's QubicaAMF rep about API access and whether QPortal reports can be scheduled or emailed
+3. Weekly CSV export from Book My Karting to a Google Sheet
+4. A simple Google Sheet dashboard that pulls from these three sheets to show total bookings across all activities
+
+That gives Rogue a single view of the whole business for the first time. It's not perfect, but it's a massive improvement over checking three separate dashboards. A unified platform like ROLLER is a medium-term goal. Worth investigating properly. Worth budgeting for. But not something to rush into.
 
 ---
 
@@ -202,11 +213,9 @@ This doesn't require a fancy CRM on day one. A Google Sheet, regularly updated, 
 
 ROLLER or Clubspeed as a medium-term goal. Not urgent, not something to rush into, but worth investigating properly.
 
-The first step is finding out what APIs exist on the three current booking systems. Can data be exported from Cubicle, the karting system, and Resolver? In what format? How easily? Is there any way to connect them to external tools?
+We now know what the three systems are and what integration options exist. Resova (escape room) has a full REST API with webhooks, which is excellent. QubicaAMF Conqueror X (bowling) has a developer portal, though access requires authorisation from the QubicaAMF representative. Book My Karting (go-karting) has no public API, so CSV export is the main option for now.
 
-If the answer is "yes, they have APIs," then a migration to a unified platform becomes much more realistic. If the answer is "no, they're locked down," then the approach might need to be different: possibly replacing one system at a time rather than all three simultaneously.
-
-Either way, the investigation costs nothing except time. And the information will be valuable whenever the decision eventually gets made.
+The practical first step is to get data from all three systems into Google Sheets: Resova via webhooks (automatic), QubicaAMF via scheduled reports or API (pending access), and Book My Karting via weekly CSV export (manual). That gives Rogue a single view of bookings across all activities for the first time.
 
 ---
 

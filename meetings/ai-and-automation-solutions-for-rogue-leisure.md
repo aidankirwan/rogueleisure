@@ -21,9 +21,9 @@
 ## Current Systems & Pain Points
 
 *   **Fragmented Booking Systems:** Three separate systems require manual consolidation:
-    *   **Cubicle System:** Used for bowling (integrated with lane controls).
-    *   **Bespoke System:** Used for karting.
-    *   **Resolver System:** Inherited from the escape room franchise.
+    *   **QubicaAMF Conqueror X:** Used for bowling (integrated with lane controls). *[Originally referred to as "Cubicle" in discovery call; correct name confirmed by Aidan 6 Feb 2026]*
+    *   **Book My Karting (Smart Entertainment):** Used for karting. *[Originally described as "bespoke" in discovery call; correct name confirmed by Aidan 6 Feb 2026]*
+    *   **Resova:** Used for the escape room. *[Originally referred to as "Resolver" in discovery call; correct name confirmed by Aidan 6 Feb 2026]*
 *   **Manual Administration:**
     *   Weekly roster creation takes **4–5 hours** manually.
     *   Staff must be contacted individually to check availability.
@@ -67,7 +67,7 @@ I’ve also got my DJ world, which is really busy. I’m booked nearly every Sat
 
 **Aidan:** I’ve been making notes. There are a few things that would amaze you—simple solutions to help with repetitive tasks. You mentioned the Microsoft ecosystem; are you using **Office 365**?
 
-**Tony:** Yes and no. The documents are there, but the staff don't have licenses. We do rosters on a spreadsheet, which is a repetitive weekly pain. It’s manual because we only put people on when we’re busy. I have three separate booking systems: **Cubicle** for bowling, a bespoke one for karting, and **Resolver** for the escape rooms. I need an automation that looks at all three and tells me what’s coming up and how many people I need to staff. Currently, one of the girls spends four or five hours a week just doing the roster and ringing zero-hour staff.
+**Tony:** Yes and no. The documents are there, but the staff don't have licenses. We do rosters on a spreadsheet, which is a repetitive weekly pain. It's manual because we only put people on when we're busy. I have three separate booking systems: **Cubicle** for bowling, a bespoke one for karting, and **Resolver** for the escape rooms. I need an automation that looks at all three and tells me what's coming up and how many people I need to staff. Currently, one of the girls spends four or five hours a week just doing the roster and ringing zero-hour staff. *[Note: Correct system names confirmed by Aidan 6 Feb 2026: QubicaAMF Conqueror X (bowling), Book My Karting (go-karting), Resova (escape room)]*
 
 **Aidan:** Have you dabbled with AI?
 

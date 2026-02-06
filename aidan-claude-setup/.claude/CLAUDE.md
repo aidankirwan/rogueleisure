@@ -32,7 +32,7 @@ Never use: delve, unlock, realm, landscape, elevate, game-changer, seamless, emp
 ## Systems
 - **Google Workspace** -- Email (Gmail), Drive, Docs, Sheets, Forms
 - **Webflow** -- Website (rogueleisure.co.uk)
-- **Booking systems:** Cubicle (bowling), bespoke (karting), Resolver (escape room)
+- **Booking systems:** QubicaAMF Conqueror X (bowling), Book My Karting (go-karting), Resova (escape room)
 - **Wispr Flow** -- Voice-to-text
 - **Granola** -- AI meeting notes
 

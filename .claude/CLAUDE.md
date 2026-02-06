@@ -20,6 +20,11 @@ Use the socratic-strategist skill. Help him think it through rather than giving 
 ## Interview Sessions
 Use the interview skill. Save outputs to `context/` folder. Build up the business profile over multiple sessions.
 
+## Booking Systems
+- **QubicaAMF Conqueror X** -- Bowling. Developer portal at developer.qubicaamf.com (requires auth). May have CRM/loyalty features (Conqueror XRM) not yet activated.
+- **Book My Karting** -- Go-karting. By Smart Entertainment Ltd. No public API. CSV/PDF export only.
+- **Resova** -- Escape room. Full REST API + webhooks at developers.resova.com. Best integration potential. Admin: login.resova.com
+
 ## Style
 - British English always
 - No em dashes

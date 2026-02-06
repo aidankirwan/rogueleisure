@@ -140,7 +140,7 @@ Once your personal capture tools are working, we can tackle the business problem
 
 ### Booking Dashboard
 
-**The problem you described:** Three separate booking systems (Cubicle for bowling, bespoke for karting, Resolver for escape room). Nobody can see total demand across all activities without checking three different places.
+**The problem you described:** Three separate booking systems (QubicaAMF Conqueror X for bowling, Book My Karting for go-karting, Resova for the escape room). Nobody can see total demand across all activities without checking three different places.
 
 **What I'd build:** A simple dashboard showing upcoming bookings from all three systems in one view.
 

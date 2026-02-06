@@ -85,6 +85,23 @@ H&S person and Dawn both have "loads of paperwork lying around." H&S person is b
 
 ---
 
+## Booking Systems
+
+The three booking systems were discussed during the meeting but detail was lost in the Wispr Flow transcription. Aidan confirmed the system names via WhatsApp on 6 Feb 2026:
+
+| Activity | System | Vendor | Admin URL |
+|----------|--------|--------|-----------|
+| Bowling | **QubicaAMF Conqueror X** | QubicaAMF Worldwide (also manufactures Rogue's pinsetters and lanes) | Via QubicaAMF portal |
+| Escape Room | **Resova** | Resova Ltd (acquired by Clubspeed LLC in 2022) | https://login.resova.com |
+| Go-Karting | **Book My Karting** | Smart Entertainment Limited, Lichfield | https://admin.bookmykarting.co.uk/bmk/login.aspx |
+
+**Integration potential (researched post-meeting):**
+- **Resova** has a full REST API with webhooks (best integration potential of the three)
+- **QubicaAMF** has a developer portal at developer.qubicaamf.com (requires authorisation from QubicaAMF rep)
+- **Book My Karting** has no public API (CSV/PDF export only)
+
+---
+
 ## Alpha Timing System (Karting)
 
 - **Alpha** was recommended to them (~£400/year) but **never actually adopted**.

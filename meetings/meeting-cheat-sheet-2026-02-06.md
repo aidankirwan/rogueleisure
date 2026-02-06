@@ -22,7 +22,7 @@
 | Escape rooms | 1 ("Crazy Cat Lady", franchise) |
 | Instagram followers | 952 |
 | Roster building time | 4-5 hrs/week |
-| Booking systems | 3 (Cubicle, bespoke karting, Resolver) |
+| Booking systems | 3 (QubicaAMF Conqueror X for bowling, Book My Karting for go-karting, Resova for escape room) |
 | Hollywood Bowl MK lanes | 19 (4 VIP) |
 | Aylesbury population growth | 14.2% projected |
 

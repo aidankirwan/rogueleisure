@@ -106,7 +106,7 @@ This isn't just about convenience. It's about insurance and compliance. When an 
 
 ### Booking Dashboard
 
-**The problem:** Three separate booking systems (Cubicle for bowling, a bespoke system for karting, Resolver for the escape room). Nobody can see total demand across all activities without checking three different places.
+**The problem:** Three separate booking systems (QubicaAMF Conqueror X for bowling, Book My Karting for go-karting, Resova for the escape room). Nobody can see total demand across all activities without checking three different places.
 
 **The solution:** A simple dashboard that pulls data from all three systems and shows upcoming bookings in one view.
 

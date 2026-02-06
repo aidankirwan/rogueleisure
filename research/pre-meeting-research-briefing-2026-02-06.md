@@ -39,7 +39,7 @@ No corporate landing page currently exists. Corporate bookers (PAs, HR teams, te
 Rogue's unique advantage is bowling + karting + escape room + arcades + karaoke under one roof. But the website silos these. A chatbot can actively cross-sell: "Looking at bowling? Did you know you can add karting?" Particularly valuable for the escape room (only 5% of revenue) which is under-promoted.
 
 **Booking routing**
-Three separate booking systems (Cubicle, bespoke karting, Resolver) confuse customers. A chatbot acts as a routing layer: "What would you like to book?" then directs to the correct link.
+Three separate booking systems (QubicaAMF Conqueror X, Book My Karting, Resova) confuse customers. A chatbot acts as a routing layer: "What would you like to book?" then directs to the correct link.
 
 **Social proof injection**
 4.5+ star reviews on Google/TripAdvisor but none on the website. A chatbot can surface testimonials contextually at the moment of decision.
@@ -330,13 +330,44 @@ Bowling is low-impact social activity. Daytime slots likely underutilised.
 
 ## 7. Booking System Integration
 
-### Current Systems -- Key Discovery Meeting Questions
+### Confirmed Systems (Post-Meeting Update)
 
-**"Cubicle" (bowling):** Could not find this as a recognised bowling booking platform. May be niche, white-labelled, or slightly different name. Ask Aidan to show you the admin dashboard. Could be Bowling Vision, BMI Leisure, or AlleyTrak.
+System names confirmed by Aidan via WhatsApp on 6 Feb 2026. The pre-meeting guesses of "Cubicle" and "Resolver" were incorrect.
 
-**"Resolver" (escape rooms):** Not found as a recognised escape room platform. Could be Resova (has API, connects with MailChimp/Google Analytics), Lockme (open API), or Bookeo. Again, ask to see the dashboard.
+**QubicaAMF Conqueror X (bowling)**
+- Vendor: QubicaAMF Worldwide (merger of Qubica S.p.A. and AMF Bowling, 2005). HQ: Richmond VA and Bologna, Italy.
+- 10,000+ bowling centres in 90 countries. Also manufactures Rogue's physical pinsetters, lanes, and pins (vertically integrated supplier).
+- Software suite: Conqueror X (management + POS), Conqueror Web & Kiosk (online booking), BES X (scoring/entertainment), Conqueror XRM (CRM/loyalty).
+- Developer portal at developer.qubicaamf.com (requires authorisation from QubicaAMF rep; not publicly documented).
+- Integrations: Lanetalk (free live scoring app), QuickBooks, Square. No Zapier/Google integrations found.
+- Conqueror XRM includes loyalty points, tiers, purchase history, and targeted promotions. May already be included in Rogue's licence but not activated.
 
-**Bespoke karting system:** Need to determine if this was built by a developer or is an off-the-shelf product with a custom front-end.
+**Resova (escape room)**
+- Vendor: Resova Ltd (UK company #09559910, London, est. 2015 as Bookify). Acquired by Clubspeed LLC in 2022.
+- 2,000+ customers, 1,500+ escape rooms, 116M+ bookings processed.
+- Admin URL: https://login.resova.com
+- Full REST API at developers.resova.com with endpoints for availability, bookings, customers, transactions, gift vouchers.
+- Webhooks: transaction.created, transaction.cancelled, booking.updated, booking.cancelled.
+- Integrations: MailChimp, Google Calendar (two-way sync), Stripe, PayPal, Square, Groupon, Wowcher, Facebook.
+- CSV and XML export (limited to 6-month date ranges per file).
+- Pricing: Lite £40/mo (100 bookings), Pro £72/mo (300 bookings), Premium £108/mo (600 bookings).
+- **Best integration potential of the three systems.** Webhooks can trigger actions in other tools (e.g. push booking data to Google Sheets).
+
+**Book My Karting (go-karting)**
+- Vendor: Smart Entertainment Limited (UK company #03551658, Lichfield, est. 1998).
+- £73M+ bookings processed. Used by F1 York, Ancaster Karting, Prestige Karting, Nottingham Raceway, and others.
+- Admin URL: https://admin.bookmykarting.co.uk/bmk/login.aspx
+- No public API. Custom integrations would need direct contact with Smart Entertainment.
+- Integrations: MailChimp, PayPal, WorldPay, Sage Pay. EPOS integration (Smart Book, Sharp systems).
+- CSV and PDF export for reports.
+- Pricing: from £84/month per venue. Setup fee £250+VAT (online) or £500+VAT (on-site). 30-day rolling contract.
+- ASP.NET technology stack.
+
+### Integration Strategy (Ranked by Feasibility)
+
+1. **Resova (escape room)** -- Most feasible. Set up webhooks to push booking data to Google Sheets. Trigger email notifications for corporate bookings. Two-way Google Calendar sync already built in.
+2. **QubicaAMF (bowling)** -- Medium feasibility. API exists but requires authorised access. Ask Rogue's QubicaAMF rep about access. Check if Conqueror XRM loyalty features are included.
+3. **Book My Karting (go-karting)** -- Hardest. No public API. Weekly CSV export to Google Sheets (manual for now).
 
 ### Potential Unified Platform: ROLLER
 - Trusted by 2,000+ attractions, London UK office
@@ -351,6 +382,7 @@ Bowling is low-impact social activity. Daytime slots likely underutilised.
 - Documented API for custom integrations
 - Integrates with MyLaps timing for karting
 - 24/7 phone support
+- **Note:** Clubspeed acquired Resova in 2022, so there may be a natural consolidation path for Rogue
 
 ---
 
@@ -441,7 +473,7 @@ They have Exchange email but no SharePoint. Upgrading to M365 Business Standard 
 
 Based on all this research, here's what to cover in the discovery meeting beyond what you'd already planned:
 
-1. **See the booking system dashboards** -- identify the actual vendors (Cubicle, Resolver, bespoke karting), check for APIs
+1. **See the booking system dashboards** -- QubicaAMF Conqueror X (bowling), Resova (escape room), Book My Karting (go-karting). Check API access options.
 2. **Walk the venue** -- observe the paper checklists in situ, note which are most critical
 3. **Ask about phone call volume** -- how many routine calls per week? This determines whether AI receptionist or chatbot has higher ROI
 4. **Ask about corporate enquiries** -- how many per month? How are they handled? What's the close rate?
