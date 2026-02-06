@@ -261,28 +261,52 @@ This is a direct revenue opportunity with zero tool cost (already covered by Pha
 
 ### Phase 4: Month 2+ -- Optimisation and Growth
 
-#### 4A. Review Automation
-Automated post-visit review requests via email/SMS. Builds Google reviews (currently 4.5+ stars but could be higher volume).
+#### 4A. Customer Database and Email Marketing (Critical Gap)
 
-#### 4B. Social Media Strategy
+**Current state:** Rogue has no contact database and sends no automated emails of any kind. No post-visit follow-ups, no birthday reminders, no review requests, no rebooking prompts. The root cause is GDPR uncertainty: Aidan doesn't know what's allowed, so they do nothing.
+
+**What GDPR actually allows:**
+- **Legitimate interest** covers direct marketing to existing customers about similar services (soft opt-in under PECR). A customer who books bowling can receive emails about bowling offers and related activities.
+- **Transactional emails** (booking confirmations, reminders) don't require marketing consent.
+- **Every booking already captures an email address** inside the three booking systems. This data is legally usable for marketing with a simple unsubscribe mechanism.
+- A clear **privacy policy** on the website and a **tick-box at booking** ("Keep me updated about offers and events") is sufficient for new marketing consent.
+
+**Short-term (with current systems):**
+1. Export customer email lists from each booking system (Resova has CSV export; QubicaAMF has reporting; Book My Karting has CSV export)
+2. Consolidate into a Google Sheet or MailChimp list (Resova and Book My Karting both integrate with MailChimp)
+3. Set up basic automated sequences: post-visit thank you + review request (3 days after visit), birthday offer (if DOB captured), rebooking prompt (30 days after visit)
+4. Add privacy policy to website (Jane can do this on Webflow)
+
+**With ROLLER (if adopted):**
+- Built-in CRM captures all customer data automatically across all activities
+- Marketing automation included (email sequences, SMS, loyalty triggers)
+- GDPR consent management built in
+- No manual export/import needed
+
+**This is arguably the single biggest missed revenue opportunity.** Every competitor with a CRM is re-engaging past customers. Rogue is letting them walk out the door with no follow-up.
+
+#### 4B. Review Automation
+Automated post-visit review requests via email/SMS. Builds Google reviews (currently 4.5+ stars but could be higher volume). This becomes straightforward once the customer database exists (see 4A above).
+
+#### 4C. Social Media Strategy
 Aidan's authentic content (real people, real stories) already gets the best engagement. Help systematise this:
 - Content calendar
 - Template for "customer story" posts
 - Schedule using Meta Business Suite (now connected)
 
-#### 4C. Chatbot (Medium-Term)
+#### 4D. Chatbot (Medium-Term)
 As discussed in pre-meeting research, this is a medium-term play:
 - Build FAQ page on website first (via Jane) -- this is the knowledge base
 - Add chatbot (likely Tidio or Botpress) once FAQ content exists
 - Focus on after-hours coverage and corporate enquiry capture
 
-#### 4D. Corporate Landing Page + Enquiry Process
+#### 4E. Corporate Landing Page + Enquiry Process
 Once Jane builds the corporate page:
 - Add enquiry form that captures group size, date, budget, activities
 - Auto-notification to Aidan
 - Follow-up template in Claude
 
-#### 4E. Booking System Investigation
+#### 4F. Booking System Investigation
 
 **Confirmed systems** (names confirmed by Aidan via WhatsApp, 6 Feb 2026):
 
@@ -376,11 +400,12 @@ Once Jane builds the corporate page:
 
 ## What This Plan Does NOT Cover (Yet)
 
-- Booking system unification (needs API investigation)
+- Booking system unification (needs API investigation and ROLLER demo)
 - Dynamic pricing (needs booking system understanding first)
-- Loyalty programme (medium-term)
+- Loyalty programme (medium-term; would come with ROLLER or Conqueror XRM activation)
 - Chatbot implementation (medium-term; FAQ page first)
 - Gift card digitisation (quick win but not urgent)
 - Staff scheduling beyond RotaCloud recommendation (needs trial)
+- GDPR privacy policy for website (Jane can add; needed before email marketing in 4A)
 
-These are all Phase 4+ items. The priority is getting Aidan's personal tools working, the central file system live, and paper checklists digitalised. Everything else builds on that foundation.
+These are all Phase 4+ items. The priority is getting Aidan's personal tools working, the central file system live, and paper checklists digitalised. Customer database and email marketing (4A) is now scoped as a critical gap that should be addressed early in Phase 4. Everything else builds on that foundation.

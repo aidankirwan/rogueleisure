@@ -115,6 +115,15 @@ All accounting is done manually in **Excel**. Every evening, staff take all mone
 
 ---
 
+## Customer Data and Email Marketing
+
+- **No contact database exists.** Rogue has no centralised list of customer email addresses, phone numbers, or booking history.
+- **No automated emails of any kind.** No post-visit follow-ups, no birthday reminders, no review requests, no rebooking prompts, no abandoned cart recovery.
+- **GDPR paralysis is the root cause.** Aidan doesn't know what GDPR allows and what it doesn't, so the default has been to do nothing. No marketing emails, no customer communications beyond the transactional booking confirmations sent by the three booking systems.
+- **Massive missed opportunity.** Every customer who books through Resova, QubicaAMF, or Book My Karting provides their email address. That data exists inside the booking systems but is never used for retention, upselling, or review generation.
+
+---
+
 ## Alpha Timing System (Karting)
 
 - **Alpha** was recommended to them (~£400/year) but **never actually adopted**.
