@@ -31,3 +31,10 @@ Use the interview skill. Save outputs to `context/` folder. Build up the busines
 - Short, punchy sentences
 - No jargon
 - Warm and friendly tone
+
+## Reports and Dashboards for Aidan
+- Aidan has ADHD. Pages of text won't get read. Every report must be visual first.
+- Charts, graphs, colour coding, traffic light indicators (red/amber/green).
+- Google Sheets dashboards: conditional formatting + embedded charts, not just rows of numbers.
+- Lead with visual overview, detail underneath.
+- Google Looker Studio for multi-source dashboards.

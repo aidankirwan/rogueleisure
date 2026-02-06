@@ -21,6 +21,8 @@
 
 **Website is NOT a blocker:** Jane (friend) built it on Webflow for £800. Jane is happy to make updates cheaply. Aidan just needs to tell her what to change. He can use your website analysis document as the brief for Jane. This is much simpler than we assumed.
 
+**ADHD design principle: visual first.** Aidan's ADHD means pages of text won't get read. All reports, dashboards, and summaries created for him must lead with visual elements: charts, graphs, colour coding, traffic light status indicators (red/amber/green). Google Sheets dashboards should use conditional formatting and embedded charts, not just rows of numbers. Lead with a visual overview; put detail underneath for Dawn or anyone else who wants to drill down.
+
 **Aidan's stated priorities (in his own words):**
 1. "I want me sorted" -- personal productivity tools, voice-to-text, talking to his computer
 2. Central file storage with access levels (like an intranet) -- everyone can access what they need

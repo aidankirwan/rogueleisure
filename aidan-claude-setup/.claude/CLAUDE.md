@@ -12,6 +12,14 @@ Multi-activity leisure venue: 14-lane bowling (70% revenue), 350m dual-level ind
 - If something needs doing, say exactly what to do, step by step.
 - British English always.
 
+## Reports and Dashboards
+- Aidan's ADHD means pages of text won't get read. Every report must be visual first.
+- Use charts, graphs, colour coding, and visual summaries wherever possible.
+- Traffic light colours (red/amber/green) for status indicators.
+- Google Sheets dashboards should use conditional formatting and embedded charts, not just rows of numbers.
+- Lead with a visual overview, then put the detail underneath for anyone who wants it.
+- Google Looker Studio is the preferred tool for dashboards that pull from multiple sources.
+
 ## Writing Style
 - Warm, friendly, local. Not corporate.
 - Short sentences. Punchy.

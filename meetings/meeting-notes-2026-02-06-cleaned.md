@@ -37,6 +37,12 @@ The name "Rogue" comes from Star Wars. When Aidan worked at Waitrose, he was a S
 
 ---
 
+## ADHD and Reporting Style
+
+Aidan's ADHD means long text documents won't get read. All reports, dashboards, and summaries created for him must be visual first: charts, graphs, colour coding, traffic light indicators (red/amber/green). Lead with a visual overview; put detail underneath for Dawn or anyone else who wants to drill down. This applies to compliance dashboards, financial summaries, booking reports, and anything else that might otherwise be a wall of numbers or text.
+
+---
+
 ## Aidan's Stated Priorities (In His Own Words)
 
 ### Priority 1: "I want me sorted"
