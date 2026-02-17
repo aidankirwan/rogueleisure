@@ -23,3 +23,8 @@
 
 # Claude session files
 *.jsonl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo

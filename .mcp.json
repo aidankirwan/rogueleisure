@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "granola": {
+      "type": "http",
+      "url": "https://mcp.granola.ai/mcp"
+    },
+    "wispr": {
+      "command": "python",
+      "args": ["C:/Users/aidan/OneDrive/Documents/Github/rogueleisure/aidan-claude-setup/wispr-mcp/server.py"]
+    }
+  }
+}
